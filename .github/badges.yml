@@ -1,0 +1,33 @@
+# .github/badges.yml
+# For more information, see https://github.com/badges/shields
+#
+# This file is used to generate badges for your repository.
+# You can add badges for your license, CI, and more.
+#
+# For a full list of available badges, see https://shields.io/
+
+# Example:
+#
+# - name: 'license'
+#   shield: 'https://img.shields.io/badge/license-MIT-blue.svg'
+#   url: 'https://opensource.org/licenses/MIT'
+#
+# - name: 'build'
+#   shield: 'https://img.shields.io/travis/user/repo.svg'
+#   url: 'https://travis-ci.org/user/repo'
+#
+# - name: 'coverage'
+#   shield: 'https://img.shields.io/coveralls/user/repo.svg'
+#   url: 'https://coveralls.io/r/user/repo'
+#
+# - name: 'dependencies'
+#   shield: 'https://david-dm.org/user/repo.svg'
+#   url: 'https://david-dm.org/user/repo'
+
+- name: 'CI'
+  shield: 'https://github.com/jules-agent/StreamCalc-YouTube-Playlist-AI-Analyzer-CLI-Tool/actions/workflows/ci.yml/badge.svg'
+  url: 'https://github.com/jules-agent/StreamCalc-YouTube-Playlist-AI-Analyzer-CLI-Tool/actions/workflows/ci.yml'
+
+- name: 'License'
+  shield: 'https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg'
+  url: 'https://creativecommons.org/licenses/by-nc/4.0/'
