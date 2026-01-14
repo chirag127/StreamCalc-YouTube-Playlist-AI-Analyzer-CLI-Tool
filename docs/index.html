@@ -1,0 +1,164 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="YouTube Playlist Length Calculator using ChatGPT – Estimate total duration of any YouTube playlist instantly with AI." />
+  <title>YouTube Playlist Length Calculator using ChatGPT</title>
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom Styles for Glassmorphism -->
+  <style>
+    body {
+      @apply bg-gradient-to-br from-gray-900 via-blue-900 to-gray-800 text-white;
+      font-family: 'Inter', sans-serif;
+    }
+    .glass {
+      @apply bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl shadow-xl;
+    }
+    .btn-primary {
+      @apply bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 transition-all duration-300 py-3 px-6 rounded-lg font-semibold shadow-md hover:shadow-lg transform hover:-translate-y-0.5;
+    }
+    .feature-card {
+      @apply glass p-6 hover:shadow-xl transition-shadow duration-300;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+  <!-- Navigation -->
+  <nav class="py-6 px-6 md:px-12 flex justify-between items-center">
+    <div class="text-2xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+      PlaylistTimer AI
+    </div>
+    <div class="hidden md:flex space-x-8">
+      <a href="#features" class="hover:text-blue-300 transition">Features</a>
+      <a href="#how-it-works" class="hover:text-blue-300 transition">How It Works</a>
+      <a href="#about" class="hover:text-blue-300 transition">About</a>
+      <a href="contact.html" class="hover:text-blue-300 transition">Contact</a>
+    </div>
+    <button class="md:hidden text-xl">☰</button>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="flex-1 px-6 md:px-12 py-16 flex flex-col items-center text-center space-y-8">
+    <div class="glass p-10 max-w-4xl mx-auto">
+      <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+        Calculate YouTube Playlist Duration
+        <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+          Using AI
+        </span>
+      </h1>
+      <p class="text-lg md:text-xl mt-4 text-gray-200 max-w-3xl mx-auto">
+        Instantly estimate the total watch time of any YouTube playlist using advanced AI analysis powered by ChatGPT. No more manual calculations!
+      </p>
+      <div class="mt-8">
+        <a href="#try-now" class="btn-primary inline-block text-white">
+          Try It Now
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Features Section -->
+  <section id="features" class="px-6 md:px-12 py-20">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-12">Powerful Features</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="feature-card">
+          <h3 class="text-2xl font-semibold mb-3">AI-Powered Estimation</h3>
+          <p class="text-gray-300">Leverages ChatGPT to analyze video content and accurately predict durations, including live estimates for unlisted or new videos.</p>
+        </div>
+        <div class="feature-card">
+          <h3 class="text-2xl font-semibold mb-3">Fast & Accurate</h3>
+          <p class="text-gray-300">Get results in seconds. Parse entire playlists and sum up hours, minutes, and seconds with precision.</p>
+        </div>
+        <div class="feature-card">
+          <h3 class="text-2xl font-semibold mb-3">User-Friendly Interface</h3>
+          <p class="text-gray-300">Clean, modern design with simple input—just paste your playlist URL and get started.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section id="how-it-works" class="px-6 md:px-12 py-20 bg-black/20">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-12">How It Works</h2>
+      <ol class="space-y-8">
+        <li class="flex items-start space-x-4">
+          <span class="bg-blue-600 text-white rounded-full h-10 w-10 flex items-center justify-center font-bold flex-shrink-0">1</span>
+          <div>
+            <h3 class="text-2xl font-semibold">Paste Your Playlist URL</h3>
+            <p class="text-gray-300 mt-1">Copy the link to any public YouTube playlist.</p>
+          </div>
+        </li>
+        <li class="flex items-start space-x-4">
+          <span class="bg-blue-600 text-white rounded-full h-10 w-10 flex items-center justify-center font-bold flex-shrink-0">2</span>
+          <div>
+            <h3 class="text-2xl font-semibold">AI Analyzes Video Metadata</h3>
+            <p class="text-gray-300 mt-1">ChatGPT processes the video titles, descriptions, and known durations to estimate total time.</p>
+          </div>
+        </li>
+        <li class="flex items-start space-x-4">
+          <span class="bg-blue-600 text-white rounded-full h-10 w-10 flex items-center justify-center font-bold flex-shrink-0">3</span>
+          <div>
+            <h3 class="text-2xl font-semibold">Get Total Duration</h3>
+            <p class="text-gray-300 mt-1">Receive a breakdown of hours, minutes, and seconds—perfect for planning your viewing schedule.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="try-now" class="px-6 md:px-12 py-20">
+    <div class="glass max-w-4xl mx-auto p-10 text-center">
+      <h2 class="text-3xl md:text-5xl font-bold mb-6">Ready to Calculate Your Playlist?</h2>
+      <p class="text-xl text-gray-200 mb-8">Paste your playlist link and let AI do the math.</p>
+      <div class="flex flex-col md:flex-row gap-4 justify-center">
+        <input type="text" placeholder="https://youtube.com/playlist?list=..." class="flex-1 px-5 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white/20 border border-white/30 text-white placeholder-gray-300"/>
+        <button class="btn-primary text-white">Calculate</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="px-6 md:px-12 py-20 bg-black/20">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-12">About the Developer</h2>
+      <div class="glass p-8 md:p-10 rounded-xl">
+        <div class="flex flex-col md:flex-row gap-8 items-center">
+          <div class="w-24 h-24 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-3xl font-bold text-white">
+            CS
+          </div>
+          <div class="flex-1">
+            <h3 class="text-2xl font-bold">Chirag Singhal</h3>
+            <p class="text-blue-300 mb-2">Software Engineer · Backend & GenAI Specialist</p>
+            <p class="text-gray-300 mb-1">B.Tech in CSE | 8.81 CGPA | Dr. A.P.J. Abdul Kalam Technical University (2020–2024)</p>
+            <p class="text-gray-300 mb-4">Based in Bhubaneswar, Odisha, India</p>
+            <div class="flex space-x-4">
+              <a href="https://github.com/chirag127" target="_blank" class="hover:text-blue-300">GitHub</a>
+              <a href="https://linkedin.com/in/chirag-singhal1" target="_blank" class="hover:text-blue-300">LinkedIn</a>
+              <a href="mailto:chiragsinghal127@gmail.com" class="hover:text-blue-300">Email</a>
+              <a href="https://buymeacoffee.com/WhyIsWhen" target="_blank" class="hover:text-blue-300">Buy Me A Coffee</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 px-6 md:px-12 text-center border-t border-white/20 mt-auto">
+    <p class="text-gray-400">
+      Copyright (c) 2026 Chirag Singhal | Designed by Chirag Singhal
+    </p>
+  </footer>
+
+</body>
+</html>
+```

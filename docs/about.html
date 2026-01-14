@@ -1,0 +1,122 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - YouTube Playlist Length Calculator</title>
+  <meta name="description" content="About Chirag Singhal - Software Engineer & GenAI Specialist building smart tools like YouTube Playlist Length Calculator using ChatGPT." />
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          backdropBlur: {
+            xs: '2px',
+          },
+          backgroundColor: {
+            glass: 'rgba(255, 255, 255, 0.08)',
+          },
+          borderColor: {
+            glass: 'rgba(255, 255, 255, 0.2)',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #0f111a, #1a1d2e, #0f111a);
+      color: #e2e8f0;
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 16px;
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    }
+    .hover-glow:hover {
+      box-shadow: 0 8px 32px 0 rgba(59, 130, 246, 0.3);
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+  <!-- Navigation -->
+  <nav class="py-6 px-4 sm:px-10 flex justify-between items-center text-white">
+    <a href="index.html" class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+      PlaylistTime AI
+    </a>
+    <div class="space-x-6 text-sm sm:text-base">
+      <a href="index.html" class="hover:text-blue-300 transition">Home</a>
+      <a href="about.html" class="text-blue-300 font-medium">About</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="flex-grow px-6 py-12 sm:px-12 lg:px-32">
+    <div class="max-w-4xl mx-auto">
+      <!-- Header -->
+      <div class="glass p-8 sm:p-10 mb-10 text-center hover-glow transition duration-300">
+        <h1 class="text-3xl sm:text-4xl font-extrabold mb-3 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+          About Me
+        </h1>
+        <p class="text-lg text-gray-300 mb-2">Meet the developer behind the YouTube Playlist Length Calculator</p>
+      </div>
+
+      <!-- Profile Card -->
+      <div class="glass p-8 sm:p-10 mb-8 hover-glow transition duration-300">
+        <div class="flex flex-col sm:flex-row items-center gap-6">
+          <div class="w-24 h-24 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-3xl font-bold text-white shadow-lg">
+            CS
+          </div>
+          <div class="text-center sm:text-left">
+            <h2 class="text-2xl font-bold text-white mb-1">Chirag Singhal</h2>
+            <p class="text-blue-300 font-medium mb-2">Software Engineer · Backend & GenAI Specialist</p>
+            <p class="text-gray-300 text-sm mb-1">📍 Bhubaneswar, Odisha, India</p>
+            <p class="text-gray-400 text-sm">📧 <a href="mailto:chiragsinghal127@gmail.com" class="hover:text-blue-300 transition">chiragsinghal127@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="glass p-8 sm:p-10 mb-8 hover-glow transition duration-300">
+        <h3 class="text-xl font-bold text-white mb-4 border-l-4 border-blue-500 pl-3">Education</h3>
+        <p class="text-gray-300 leading-relaxed">
+          B.Tech in Computer Science and Engineering with <strong>8.81 CGPA</strong> from 
+          <strong>Dr. A.P.J. Abdul Kalam Technical University</strong> (2020–2024). 
+          Focused on full-stack development, AI/ML, and scalable backend systems.
+        </p>
+      </div>
+
+      <!-- About Project -->
+      <div class="glass p-8 sm:p-10 mb-8 hover-glow transition duration-300">
+        <h3 class="text-xl font-bold text-white mb-4 border-l-4 border-blue-500 pl-3">About This Project</h3>
+        <p class="text-gray-300 leading-relaxed mb-4">
+          The <strong>YouTube Playlist Length Calculator using ChatGPT</strong> is a smart tool that estimates the total duration of any YouTube playlist by analyzing video titles, descriptions, and metadata using AI.
+        </p>
+        <p class="text-gray-300 leading-relaxed">
+          Built with modern backend practices and powered by generative AI, this project showcases the potential of combining API integrations with natural language processing to solve everyday problems — like planning your next binge session.
+        </p>
+      </div>
+
+      <!-- Connect -->
+      <div class="glass p-8 sm:p-10 hover-glow transition duration-300">
+        <h3 class="text-xl font-bold text-white mb-5 border-l-4 border-blue-500 pl-3">Connect With Me</h3>
+        <div class="flex flex-wrap gap-4 justify-center sm:justify-start">
+          <a href="https://github.com/chirag127" target="_blank" class="flex items-center gap-2 bg-gray-800 hover:bg-gray-700 text-white px-5 py-2 rounded-full text-sm transition">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.577C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            GitHub
+          </a>
+          <a href="https://linkedin.com/in/chirag-singhal1" target="_blank" class="flex items-center gap-2 bg-blue-700 hover:bg-blue-600 text-white px-5 py-2 rounded-full text-sm transition">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+          <a href="mailto:chiragsinghal127@gmail.com" class="flex items-center gap-2 bg-gray-600 hover:bg-gray-500 text-white px-5 py-2 rounded-full text-sm transition">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1
